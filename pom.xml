@@ -32,17 +32,7 @@
         <artifactId>sparkts</artifactId>
         <version>0.4.1</version>
     </dependency>
-    <dependency>
-        <groupId>com.github.aishfenton</groupId>
-        <artifactId>vegas_2.10</artifactId>
-        <version>0.2.3</version>
-    </dependency>
 
-    <dependency>
-        <groupId>com.github.aishfenton</groupId>
-        <artifactId>vegas-spark_2.10</artifactId>
-        <version>0.2.3</version>
-    </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib -->
     <dependency>
         <groupId>org.apache.spark</groupId>
