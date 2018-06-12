@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c6a1968-6f34-4292-9e8a-d61a5a714470" name="Default" comment="add geospark object">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/loader/DataLoader$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/loader/DataLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$$anonfun$partitioning$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,8 +42,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="558">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -44,8 +51,8 @@
       <file leaf-file-name="TestScala.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+            <state relative-caret-position="515">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
               <folding>
                 <element signature="e#54#94#0" expanded="true" />
               </folding>
@@ -53,23 +60,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeoSpark.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GeoSpark.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+            <state relative-caret-position="362">
+              <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
               <folding>
-                <element signature="e#50#93#0" expanded="true" />
+                <element signature="e#51#94#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataLoader.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataLoader.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="369">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#52#85#0" expanded="true" />
               </folding>
@@ -92,10 +99,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/TestScala.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" />
       </list>
     </option>
   </component>
@@ -114,11 +121,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="20" />
-    <option name="y" value="31" />
-    <option name="width" value="755" />
-    <option name="height" value="789" />
+    <option name="y" value="51" />
+    <option name="width" value="1386" />
+    <option name="height" value="769" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -311,7 +318,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527583293358</updated>
-      <workItem from="1527583297860" duration="40867000" />
+      <workItem from="1527583297860" duration="48781000" />
     </task>
     <task id="LOCAL-00001" summary="First version with Scala 2.10 and spark 2.2.0">
       <created>1527884891528</created>
@@ -366,10 +373,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40867000" />
+    <option name="totallyTimeSpent" value="48781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="31" width="755" height="789" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -381,16 +389,16 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50429183" side_tool="true" weight="0.27515152" />
       <window_info anchor="right" id="Maven Projects" weight="0.3296131" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7939914" weight="0.31878787" />
-      <window_info active="true" anchor="bottom" id="Version Control" sideWeight="0.6479663" visible="true" weight="0.43208092" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49570817" weight="0.27456647" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7939914" visible="true" weight="0.31878787" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.6479663" weight="0.43151516" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49570817" weight="0.23030303" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5203366" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2653791" />
       <window_info anchor="right" id="Bean Validation" weight="0.3296131" />
       <window_info anchor="right" id="Database" weight="0.3296131" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39880952" />
@@ -441,11 +449,12 @@
     </ignored-roots>
     <MESSAGE value="First version with Scala 2.10 and spark 2.2.0" />
     <MESSAGE value="add package dataloader" />
-    <option name="LAST_COMMIT_MESSAGE" value="add package dataloader" />
+    <MESSAGE value="add geospark object" />
+    <option name="LAST_COMMIT_MESSAGE" value="add geospark object" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -460,39 +469,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+        <state relative-caret-position="369">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="e#50#93#0" expanded="true" />
+            <element signature="e#52#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        <state relative-caret-position="515">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
           <folding>
             <element signature="e#54#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="558">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
           <folding>
-            <element signature="e#52#85#0" expanded="true" />
+            <element signature="e#51#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
