@@ -1,23 +1,25 @@
 package org.grint.masterthesis.testscala210.main
 
+import java.util
 
-import com.vividsolutions.jts.geom.Geometry
+import com.vividsolutions.jts.geom.{Coordinate, Geometry}
+import org.wololo.geojson.{Geometry, Polygon}
+import com.vividsolutions.jts.util.GeometricShapeFactory
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.api.java.JavaRDD
-import org.apache.spark.sql.SparkSession
 import org.datasyslab.geospark.enums.{FileDataSplitter, GridType, IndexType}
 import org.grint.masterthesis.testscala210.loader.DataLoader
 import org.datasyslab.geospark.spatialRDD.{PointRDD, PolygonRDD, SpatialRDD}
 import org.datasyslab.geospark.{enums, spatialPartitioning}
+import org.geotools.geometry.jts.JTS
+import org.wololo.jts2geojson.GeoJSONWriter
 //import org.datasyslab.geosparksql.utils.Adapter
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.datasyslab.geospark.spatialOperator.JoinQuery
 import org.datasyslab.geospark.spatialOperator.JoinQuery.DistanceJoinQuery
 import org.datasyslab.geospark.spatialOperator.JoinQuery.DistanceJoinQueryCountByKey
-import org.datasyslab.geospark.spatialRDD.PointRDD._
 
 
-
+case class Out(clusterId:Int, id:String, longitude:Double, latitude:Double, timestamp:Long)
 
 object GeoSpark {
 
@@ -41,58 +43,34 @@ object GeoSpark {
    var pointRDD: PointRDD = new PointRDD (sc,InputLocation,Offset,Splitter, carryOtherAttributes, numPartitions)
     //val res = spatialRDD.spatialPartitionedRDD(GridType.KDBTREE)
     val res2 = pointRDD.spatialPartitioning(gridType)
-   // var objectRDD = new PointRDD(sparkSession, InputLocation, Offset, Splitter, carryOtherAttributes)
-//  val inputLocation: String = HDFS_directory+"/colocation/partitio prdd ns/reducedGDELT/part-00000"
-//        val offset: Int = 2
-//        val splitter: String = "csv"
-//        val gridType: String = "X-Y"
-//        val numPartions: Int =200
-//
-//        var pointRDD: PointRDD = new PointRDD(sc, inputLocation, offset, splitter, gridType, numPartions)
-    // var gsDF = DataLoader.cardsDF.select("applicantlocation")
-//    var spatialRDD =new SpatialRDD[Geometry]
-//    spatialRDD.rawSpatialRDD =Adapter.toRdd(gsDF)
-//
-//    println(spatialRDD)
-//    val res = spatialRDD.spatialPartitionedRDD(GridType.KDBTREE)
-//    "/home/SparkUser/Downloads/GeoSpark/src/test/resources/arealm.csv"
-//    val queryWindowRDD = new PolygonRDD(sparkSession, "svetlana.matveeva/Downloads/arealm.csv", 0, PolygonRDDEndOffset, PolygonRDDSplitter, true)
-//    .spatialPartitioning(spatialRDD.getPartitioner)
-//
-//    val result = JoinQuery.SpatialJoinQuery(objectRDD, queryWindowRDD, usingIndex, considerBoundaryIntersection)
-//
-//
-//
-//   // gsDF.take(10).foreach(println)
-//val resourceFolder = System.getProperty("user.dir") + "/src/test/resources/"
 
-    // try use example from https://github.com/DataSystemsLab/GeoSpark/blob/master/core/src/test/scala/org/datasyslab/geospark/scalaTest.scala#L38
-//    val PointRDDInputLocation = "svetlana.matveeva/Documents/MasterThesis/arealmsmall.csv"
-//    val PointRDDSplitter = FileDataSplitter.CSV
-//    val PointRDDIndexType = IndexType.RTREE
-//    val PointRDDNumPartitions = 5
-//    val PointRDDOffset = 1
-//
-//    val PolygonRDDInputLocation = "svetlana.matveeva/Documents/MasterThesis/primaryroads-polygon.csv"
-//    val PolygonRDDSplitter = FileDataSplitter.CSV
-//    val PolygonRDDIndexType = IndexType.RTREE
-//    val PolygonRDDNumPartitions = 5
-//    val PolygonRDDStartOffset = 0
-//    val PolygonRDDEndOffset = 9
-//
-//    val queryWindowRDD = new PolygonRDD(sc, PolygonRDDInputLocation, PolygonRDDStartOffset, PolygonRDDEndOffset, PolygonRDDSplitter, true)
-//    val objectRDD = new PointRDD(sc, PointRDDInputLocation, PointRDDOffset, PointRDDSplitter, false)
-//    objectRDD.analyze()
-//    objectRDD.spatialPartitioning(GridType.QUADTREE)
-//    queryWindowRDD.spatialPartitioning(objectRDD.getPartitioner)
-//    val eachQueryLoopTimes = 1
-//    for (i <- 1 to eachQueryLoopTimes) {
-// val resultSize = JoinQuery.DistanceJoinQuery(objectRDD, queryWindowRDD, false, true).count()
-//      //val res2 = JoinQuery.distanceJoin(objectRDD, queryWindowRDD, false, true).count()
-//    }
-//
-//    // val resultSize = JoinQuery.DistanceJoinQuery(objectRDD, queryWindowRDD, false, true).count()
-//    //val res2= JoinQuery.distanceJoin(objectRDD, queryWindowRDD, false, true).count()
-//
+
+  }
+  /*   Save Partitions Grids Boundaries as GeoJSON  */
+  def saveAsGeoJSONBoundaries(sc:SparkContext,pointRDD:PointRDD,output:String): Unit = {
+
+    val g = pointRDD.grids.listIterator()
+    val writer = new GeoJSONWriter()
+    val result: util.ArrayList[String] = new util.ArrayList[String]
+
+    while (g.hasNext) {
+      val item = g.next()
+      //println(item.grid, " ", item.getArea)
+      println(item, " ", item.getMinX, item.getMinY, item.getMaxX, item.getMaxY)
+      val gsf = new GeometricShapeFactory();
+      gsf.setBase(new Coordinate(item.getMinX, item.getMinY))
+      gsf.setWidth(item.getMaxX - item.getMinX)
+      gsf.setHeight(item.getMaxY - item.getMinY)
+      gsf.setNumPoints(4);
+      val polygon = gsf.createRectangle()
+     // JTS.transform()
+      //var p = new Polygon(polygon.getCoordinates.)
+      //val gson = writer.write(polygon).toString + ","
+      //result.add(gson)
+
+
+
+    }
+    //sc.parallelize(result.toArray()).coalesce(1).saveAsTextFile(output)
   }
 }

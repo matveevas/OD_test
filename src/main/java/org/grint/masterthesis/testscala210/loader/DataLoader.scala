@@ -25,8 +25,9 @@ object DataLoader {
     cardsDF = sparkSession.read
       .format("jdbc")
       .option("url", "jdbc:postgresql://localhost/callcenterdb?user=postgres&password=123")
-      .option("dbtable", "callcenter.cards")
-      .option("columnname", "id, createddatetime, addresstext, applicantlocation")
+      .option("dbtable",
+        "(select t2.id, t2.createddatetime,t2.addresstext,t2.applicantlocation, t1.longitude, t1.latitude from callcenter.address_with_gps as t1 left join callcenter.cards as t2 on t1.id=t2.id)as t1")
+      .option("columnname", "id, createddatetime, addresstext, applicantlocation,latitude,longitude")
       .option("user", "postgres")
       .option("password", "123")
       .load()
@@ -46,7 +47,7 @@ object DataLoader {
       .load()
     //val criminalsDF1= criminalsDF.groupBy("datetime").count().show(numRows = 30)
 
-    criminalsDF.select("count", "datetime").show(numRows = 150)
+    criminalsDF.select("count", "datetime").show(numRows = 15)
 
   }
 
