@@ -33,7 +33,8 @@ object TestScala {
     println("coefficients: " + amodel.coefficients.mkString(","))
     val forecast = amodel.forecast(ts, 20)
     println("forecast of next 20 observations: " + forecast.toArray.mkString(","))
-
+    GeoSpark.partitioning(sparkSession)
+    GS1.partitioning1(sparkSession)
   }
 
 }
