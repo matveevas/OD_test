@@ -2,7 +2,10 @@ package org.grint.masterthesis.testscala210.main
 
 import com.cloudera.sparkts.models.ARIMA
 import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.serializer.KryoSerializer
 import org.apache.spark.sql.SparkSession
+import org.datasyslab.geospark.serde.GeoSparkKryoRegistrator
+import org.datasyslab.geosparksql.utils.GeoSparkSQLRegistrator
 import org.grint.masterthesis.testscala210.loader.DataLoader
 
 object TestScala {
@@ -12,9 +15,13 @@ object TestScala {
     //Initialize SparkSession
     val sparkSession = SparkSession
       .builder()
+     .config("spark.serializer",classOf[KryoSerializer].getName)
+     .config("spark.kryo.registrator", classOf[GeoSparkKryoRegistrator].getName)
       .appName("spark-sql-basic")
       .master("local[*]")
       .getOrCreate()
+   //GeoSparkSQLRegistrator.registerAll(sparkSession)
+
 
 
     //      val plot = Vegas("Country Pop").

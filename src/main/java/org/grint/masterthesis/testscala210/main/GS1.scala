@@ -10,6 +10,7 @@ import org.apache.spark.sql.geosparksql.expressions.ST_Point
 import org.apache.spark.sql.{Dataset, Encoders, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.datasyslab.geospark.enums.{FileDataSplitter, GridType, IndexType}
+import org.datasyslab.geospark.serde.GeoSparkKryoRegistrator
 import org.grint.masterthesis.testscala210.loader.DataLoader
 import org.datasyslab.geospark.spatialRDD.{PointRDD, PolygonRDD, SpatialRDD}
 import org.datasyslab.geospark.{enums, spatialPartitioning}
@@ -18,6 +19,8 @@ import org.geotools.geometry.jts.JTS
 import org.wololo.geojson
 import org.wololo.jts2geojson.GeoJSONWriter
 import shapeless.PolyDefns.->
+import org.datasyslab.geosparksql.utils.{Adapter, GeoSparkSQLRegistrator}
+import org.datasyslab.geosparksql.UDF
 
 import scala.collection.mutable.ListBuffer
 //import org.datasyslab.geosparksql.utils.Adapter
@@ -26,11 +29,20 @@ import org.datasyslab.geospark.spatialOperator.JoinQuery
 import org.datasyslab.geospark.spatialRDD.RectangleRDD
 import scala.collection.JavaConversions._
 import org.apache.spark.sql.RowFactory
+import org.datasyslab.geospark.utils.GeoSparkConf
+
+
+import org.apache.spark.serializer.KryoSerializer
 
 object GS1 {
 
+
   def partitioning1(sparkSession: SparkSession) : Unit = {
 
+    GeoSparkSQLRegistrator.registerAll(sparkSession)
+
+    GeoSparkSQLRegistrator.registerAll(sparkSession)
+    //GeoSparkSQLRegistrator.registerAll(sparkSession)
     val conf = new SparkConf()
 
     conf.setAppName("Spark Hello World")
@@ -67,7 +79,7 @@ ST_Point
     println(pointWktDF.count())
 
     //create PointDF
-    val pointDF= sparkSession.sql("select ST_Point(latitude, longitude) as area from pointtable")//,id,createddatetime,addresstext  from pointtable")
+    val pointDF= sparkSession.sql("select ST_Point(cast(latitude as Decimal(24,20)), cast(longitude as Decimal(24,20))) as area from pointtable")//,id,createddatetime,addresstext  from pointtable")
     println(pointDF.count())
     //create PointRDD
     val pointRDD = new SpatialRDD[Geometry]
