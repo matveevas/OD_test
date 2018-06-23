@@ -6,7 +6,7 @@ import com.vividsolutions.jts.geom._
 import com.vividsolutions.jts.geom.Geometry
 import com.vividsolutions.jts.util.GeometricShapeFactory
 import org.apache.spark.api.java.JavaPairRDD
-import org.apache.spark.sql.geosparksql.expressions.ST_Point
+import org.apache.spark.sql.geosparksql.expressions.{ST_Point, ST_PolygonFromEnvelope, ST_PolygonFromText}
 import org.apache.spark.sql.{Dataset, Encoders, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.datasyslab.geospark.enums.{FileDataSplitter, GridType, IndexType}
@@ -40,8 +40,7 @@ object GS1 {
   def partitioning1(sparkSession: SparkSession) : Unit = {
 
     GeoSparkSQLRegistrator.registerAll(sparkSession)
-
-    GeoSparkSQLRegistrator.registerAll(sparkSession)
+   // GeoSparkSQLRegistrator.registerAll(sparkSession.sqlContext)
     //GeoSparkSQLRegistrator.registerAll(sparkSession)
     val conf = new SparkConf()
 
@@ -72,20 +71,21 @@ object GS1 {
       .option("user", "postgres")
       .option("password", "123")
       .load()
-ST_Point
+
 
     //val rddWithOtherAttributes = objectRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
     pointWktDF.createOrReplaceTempView("pointtable")
     println(pointWktDF.count())
 
     //create PointDF
-    val pointDF= sparkSession.sql("select ST_Point(cast(latitude as Decimal(24,20)), cast(longitude as Decimal(24,20))) as area from pointtable")//,id,createddatetime,addresstext  from pointtable")
+    val pointDF= sparkSession.sql("select ST_Point(cast(latitude as Decimal(24,20)), cast(longitude as Decimal(24,20))) as area,id,addresstext, createddatetime from pointtable")//,id,createddatetime,addresstext  from pointtable")
     println(pointDF.count())
     //create PointRDD
     val pointRDD = new SpatialRDD[Geometry]
     //pointRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
     pointRDD.rawSpatialRDD = Adapter.toRdd(pointDF)
     pointRDD.analyze()
+    pointRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
 
     //import Polygon data from csv
    val polygonWktDF = sparkSession.read.format("csv")
@@ -95,8 +95,10 @@ ST_Point
      .option("treatEmptyValuesAsNulls", "true")
      .load("/Users/svetlana.matveeva/IdeaProjects/TestScala210/output.csv")
 
+
+   polygonWktDF.createOrReplaceTempView("polygontable")
     //create PolygonDF
-    val polygonDF= sparkSession.sql("select minX, maxX, minY, maxY from polygonWktDF")
+    val polygonDF= sparkSession.sql("select ST_PolygonFromEnvelope(cast(minX as Decimal(24,20)), cast(maxX as Decimal(24,20)), cast(minY as Decimal(24,20)), cast(maxY as Decimal(24,20))) from polygontable")
     //create PolygonRDD
     val polygonRDD = new SpatialRDD[Geometry]
     polygonRDD.rawSpatialRDD = Adapter.toRdd(polygonDF)
@@ -106,8 +108,11 @@ ST_Point
     pointRDD.spatialPartitioning(GridType.EQUALGRID)
     polygonRDD.spatialPartitioning(pointRDD.getPartitioner)
 
+    //val rddWithOtherAttributes = objectRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
+
     //Join
     val joinResultPairRDD = JoinQuery.SpatialJoinQueryFlat(pointRDD,polygonRDD,false,true)
+    //val rddwithotherattr = joinResultPairRDD.rdd.map[String](f=>f.g)
     val joinResultDf= Adapter.toDf(joinResultPairRDD,sparkSession)
     println(joinResultDf.count())
     joinResultDf.coalesce(1).write.csv("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/joinresult")

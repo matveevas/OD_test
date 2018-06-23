@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c6a1968-6f34-4292-9e8a-d61a5a714470" name="Default" comment="add geospark object">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala" afterDir="false" />
+    <list default="true" id="2c6a1968-6f34-4292-9e8a-d61a5a714470" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$$anonfun$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,8 +37,8 @@
       <file leaf-file-name="GeoSpark.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+            <state relative-caret-position="138">
+              <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
               <folding>
                 <element signature="e#50#66#0" expanded="true" />
               </folding>
@@ -51,8 +49,8 @@
       <file leaf-file-name="GS1.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="311">
+              <caret line="113" column="90" selection-start-line="113" selection-start-column="90" selection-end-line="113" selection-end-column="90" />
               <folding>
                 <element signature="e#51#80#0" expanded="true" />
               </folding>
@@ -60,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ST_Point.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.3/1.1.3/geospark-sql_2.3-1.1.3.jar!/org/apache/spark/sql/geosparksql/expressions/ST_Point.class">
+      <file leaf-file-name="ST_PolygonFromEnvelope.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.2/1.1.3/geospark-sql_2.2-1.1.3.jar!/org/apache/spark/sql/geosparksql/expressions/ST_PolygonFromEnvelope.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -72,8 +70,8 @@
       <file leaf-file-name="TestScala.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="645">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#50#90#0" expanded="true" />
               </folding>
@@ -84,8 +82,8 @@
       <file leaf-file-name="DataLoader.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="32" column="13" selection-start-line="24" selection-start-column="4" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="-70">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#52#85#0" expanded="true" />
               </folding>
@@ -116,6 +114,7 @@
       <find>tordd</find>
       <find>geospark</find>
       <find>err</find>
+      <find>grint</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,10 +125,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/TestScala.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$USER_HOME$/Documents/MasterThesis/test2.csv" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" />
-        <option value="$USER_HOME$/Documents/MasterThesis/test2.csv" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala" />
       </list>
     </option>
@@ -150,10 +149,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="20" />
-    <option name="y" value="51" />
-    <option name="width" value="1386" />
-    <option name="height" value="769" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -209,6 +207,21 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testscala210" type="462c0819:PsiDirectoryNode" />
               <item name="loader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testscala210" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
@@ -338,7 +351,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527583293358</updated>
-      <workItem from="1527583297860" duration="123164000" />
+      <workItem from="1527583297860" duration="134499000" />
     </task>
     <task id="LOCAL-00001" summary="First version with Scala 2.10 and spark 2.2.0">
       <created>1527884891528</created>
@@ -403,11 +416,25 @@
       <option name="project" value="LOCAL" />
       <updated>1529078823067</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add geospark object">
+      <created>1529694528028</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1529694528028</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add geospark object">
+      <created>1529704987736</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1529704987737</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123164000" />
+    <option name="totallyTimeSpent" value="134499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -430,10 +457,10 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" sideWeight="0.49925596" weight="0.32886904" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.7939914" visible="true" weight="0.31878787" />
-      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.6479663" weight="0.43151516" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.7939914" weight="0.31878787" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="5" sideWeight="0.6479663" visible="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49570817" weight="0.23030303" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.23676682" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.23247497" />
       <window_info anchor="right" id="Bean Validation" order="5" weight="0.3296131" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -527,16 +554,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/wololo/jts2geojson/0.12.0/jts2geojson-0.12.0.jar!/org/wololo/geojson/GeoJSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/wololo/jts2geojson/0.12.0/jts2geojson-0.12.0.jar!/org/wololo/geojson/Geometry.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -642,13 +659,6 @@
           <folding>
             <element signature="e#0#2767#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -828,40 +838,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#50#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="32" column="13" selection-start-line="24" selection-start-column="4" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="e#52#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark/1.1.3/geospark-1.1.3.jar!/com/vividsolutions/jts/geom/Geometry.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-          <folding>
-            <element signature="e#50#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,10 +859,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#52#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+          <folding>
+            <element signature="e#50#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#50#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.0/scala-library-2.11.0.jar!/scala/collection/immutable/List.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.3/1.1.3/geospark-sql_2.3-1.1.3.jar!/org/datasyslab/geosparksql/utils/GeoSparkSQLRegistrator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.3/1.1.3/geospark-sql_2.3-1.1.3.jar!/org/datasyslab/geosparksql/UDF/UdfRegistrator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.2/1.1.3/geospark-sql_2.2-1.1.3.jar!/org/datasyslab/geosparksql/utils/Adapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.2/1.1.3/geospark-sql_2.2-1.1.3.jar!/org/apache/spark/sql/geosparksql/expressions/ST_PolygonFromEnvelope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="311">
+          <caret line="113" column="90" selection-start-line="113" selection-start-column="90" selection-end-line="113" selection-end-column="90" />
           <folding>
             <element signature="e#51#80#0" expanded="true" />
           </folding>
@@ -918,6 +970,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>scala-sdk-2.11.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
