@@ -78,14 +78,17 @@ object GS1 {
     println(pointWktDF.count())
 
     //create PointDF
-    val pointDF= sparkSession.sql("select ST_Point(cast(latitude as Decimal(24,20)), cast(longitude as Decimal(24,20))) as area,id,addresstext, createddatetime from pointtable")//,id,createddatetime,addresstext  from pointtable")
+    val pointDF= sparkSession.sql("select ST_Point(cast(latitude as Decimal(24,20)), cast(longitude as Decimal(24,20)), cast(id as String),cast(addresstext as String), cast(createddatetime as String)) as area from pointtable")//,id,createddatetime,addresstext  from pointtable")
     println(pointDF.count())
+   pointDF.printSchema()
+
     //create PointRDD
     val pointRDD = new SpatialRDD[Geometry]
     //pointRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
     pointRDD.rawSpatialRDD = Adapter.toRdd(pointDF)
+    //pointRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
     pointRDD.analyze()
-    pointRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
+    pointRDD.rawSpatialRDD.coalesce(1).saveAsTextFile("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/PointRDD")
 
     //import Polygon data from csv
    val polygonWktDF = sparkSession.read.format("csv")
@@ -113,6 +116,7 @@ object GS1 {
     //Join
     val joinResultPairRDD = JoinQuery.SpatialJoinQueryFlat(pointRDD,polygonRDD,false,true)
     //val rddwithotherattr = joinResultPairRDD.rdd.map[String](f=>f.g)
+    //joinResultPairRDD.rdd.map(f=>f._2.getUserData.asInstanceOf[String])
     val joinResultDf= Adapter.toDf(joinResultPairRDD,sparkSession)
     println(joinResultDf.count())
     joinResultDf.coalesce(1).write.csv("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/joinresult")
