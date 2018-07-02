@@ -24,21 +24,21 @@ object TestScala {
 
 
 
-    //      val plot = Vegas("Country Pop").
-    //        withDataFrame(DataLoader.criminalsDF).
-    //        encodeX("datetime", Nom).
-    //        encodeY("count", Quant).
-    //        encodeSize("Horsepower", Quant).
-    //        encodeColor("Original", Nominal).
-    //        mark(Line)
-    //
-    //plot.show
+//          val plot = Vegas("Country Pop").
+//            withDataFrame(DataLoader.criminalsDF).
+//            encodeX("datetime", Nom).
+//            encodeY("count", Quant).
+//            encodeSize("Horsepower", Quant).
+//            encodeColor("Original", Nominal).
+//            mark(Line)
+//
+//    plot.show
     DataLoader.load(sparkSession)
     val ts= Vectors.dense(DataLoader.criminalsDF.select("count").collect().map(_.getDouble(0)))
     //println(ts)
     val amodel= ARIMA.fitModel(1,0,1,ts)
     println("coefficients: " + amodel.coefficients.mkString(","))
-    val forecast = amodel.forecast(ts, 20)
+    val forecast = amodel.forecast(ts, 4)
     println("forecast of next 20 observations: " + forecast.toArray.mkString(","))
     GeoSpark.partitioning(sparkSession)
     GS1.partitioning1(sparkSession)

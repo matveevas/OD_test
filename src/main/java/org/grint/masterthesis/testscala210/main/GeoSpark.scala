@@ -49,11 +49,11 @@ object GeoSpark {
     val sc = sparkSession.sparkContext
     import sparkSession.implicits._
 
-    val InputLocation = "/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/test2.csv"//DataLoader.cardsDF.col("applicantlocation")
+    val InputLocation = "/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/test22.csv"//DataLoader.cardsDF.col("applicantlocation")
     val Offset = 0 // The WKT string starts from Column 0
     val Splitter = FileDataSplitter.CSV//GEOJSON
     val gridType = GridType.EQUALGRID
-    val numPartitions = 4
+    val numPartitions = 60
     val carryOtherAttributes = true
 
    var pointRDD: PointRDD = new PointRDD (sc,InputLocation,Offset,Splitter, carryOtherAttributes, numPartitions)
@@ -66,6 +66,7 @@ object GeoSpark {
 
     val value = sc.parallelize(pointRDD.grids.toList).map((f: Envelope) => Out(f.getMinX, f.getMaxX, f.getMinY, f.getMaxY))
     println(pointRDD.grids.length)
+    value.foreach(p => println(p))
       var valueDF = value.toDF("minX", "maxX", "minY", "maxY")
 
     valueDF.coalesce(1).write
@@ -86,6 +87,7 @@ object GeoSpark {
       val polObj = gsf.createPolygon(coordinates)
       polObj }
     )
+
 
 println(valuePL.count())
     valuePL.foreach(f=> println(f.getCoordinate.x))

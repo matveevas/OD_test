@@ -49,6 +49,7 @@ object DataLoader {
 
     criminalsDF.select("count", "datetime").show(numRows = 15)
 
+
   }
 
 }
