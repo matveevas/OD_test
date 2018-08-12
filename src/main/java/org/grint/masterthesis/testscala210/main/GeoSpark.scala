@@ -53,7 +53,7 @@ object GeoSpark {
     val Offset = 0 // The WKT string starts from Column 0
     val Splitter = FileDataSplitter.CSV//GEOJSON
     val gridType = GridType.EQUALGRID
-    val numPartitions = 60
+    val numPartitions = 120
     val carryOtherAttributes = true
 
    var pointRDD: PointRDD = new PointRDD (sc,InputLocation,Offset,Splitter, carryOtherAttributes, numPartitions)

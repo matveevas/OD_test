@@ -24,6 +24,7 @@ import shapeless.PolyDefns.->
 import org.datasyslab.geosparksql.utils.{Adapter, GeoSparkSQLRegistrator}
 import org.datasyslab.geosparksql.UDF
 import org.apache.spark.sql.functions._
+import org.datasyslab.geospark.formatMapper.shapefileParser.ShapefileReader
 
 import scala.collection.mutable.ListBuffer
 //import org.datasyslab.geosparksql.utils.Adapter
@@ -65,16 +66,23 @@ object GS1 {
 //    println(pointWktDF.count())
 //    pointWktDF.createOrReplaceTempView("pointtable")
 
-    val pointWktDF= sparkSession.read
-      .format("jdbc")
-      .option("url", "jdbc:postgresql://localhost/callcenterdb?user=postgres&password=123")
-      .option("dbtable",
-        "(select t2.id, t2.addresstext, t1.longitude, t1.latitude, t2.createddatetime from callcenter.address_with_gps as t1 left join callcenter.cards as t2 on t1.id=t2.id limit 500)as t1")
-      .option("columnname", "id, addresstext,longitude,latitude,createddatetime")
-      .option("user", "postgres")
-      .option("password", "123")
-      .load()
-
+//    val pointWktDF= sparkSession.read
+//      .format("jdbc")
+//      .option("url", "jdbc:postgresql://localhost/callcenterdb?user=postgres&password=123")
+//      .option("dbtable",
+//       "(select distinct t1.latitude, t1.longitude,t2.id, t2.addresstext, date_trunc('h', t2.modifieddatetime) as createddatetime from callcenter.address_with_gps as t1 inner join callcenter.cards as t2 on t1.id=t2.id where t2.modifieddatetime is not null and t2.modifieddatetime > '2017-07-24 00:00:00+03'  and t1.id not in (1017630,1018026, 1020361,1029120 ,1085904,1148907, 1208235))as t1")
+//      //"(select distinct t1.latitude, t1.longitude,t2.id, t2.addresstext, date_trunc('day', t2.modifieddatetime) as createddatetime from callcenter.address_with_gps as t1 inner join callcenter.cards as t2 on t1.id=t2.id where t2.id in (select cardid from callcenter.cardsufferers) and t2.modifieddatetime is not null and t2.modifieddatetime > '2017-07-24 00:00:00+03'  and t1.id not in (1017630,1018026, 1020361,1029120 ,1085904,1148907, 1208235))as t1")
+//      //"(select t2.id, t2.addresstext, t1.longitude, t1.latitude, date_trunc('hour',t2.createddatetime) as createddatetime from callcenter.address_with_gps as t1 left join callcenter.cards as t2 on t1.id=t2.id limit 1500)as t1")
+//      .option("columnname", "id, addresstext,longitude,latitude,createddatetime")
+//      .option("user", "postgres")
+//      .option("password", "123")
+//      .load()
+    val pointWktDF = sparkSession.read.format("csv")
+      .option("header", "true")
+      .option("delimiter", ",")
+      .option("nullValue", "")
+      .option("treatEmptyValuesAsNulls", "true")
+      .load("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/test24.csv")
 
     pointWktDF.createOrReplaceTempView("pointtable")
     println(pointWktDF.count())
@@ -82,12 +90,13 @@ object GS1 {
     //create PointDF
     val pointDF= sparkSession.sql("select ST_Point(cast(latitude as Decimal(24,20)), cast(longitude as Decimal(24,20)), cast(id as String),cast(addresstext as String), cast(createddatetime as String)) as area from pointtable")//,id,createddatetime,addresstext  from pointtable")
     println(pointDF.count())
-   pointDF.printSchema()
+   //pointDF.printSchema()
 
     //create PointRDD
     val pointRDD = new SpatialRDD[Geometry]
     //pointRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
     pointRDD.rawSpatialRDD = Adapter.toRdd(pointDF)
+    print("here")
     //pointRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
     pointRDD.analyze()
     //pointRDD.rawSpatialRDD.coalesce(1).saveAsTextFile("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/PointRDD")
@@ -99,11 +108,37 @@ object GS1 {
      .option("nullValue", "")
      .option("treatEmptyValuesAsNulls", "true")
      .load("/Users/svetlana.matveeva/IdeaProjects/TestScala210/output.csv")
-
+//"/Users/svetlana.matveeva/IdeaProjects/TestScala210/output.csv"
    val polygonID=polygonWktDF.withColumn("ID",monotonically_increasing_id())
+    polygonID.createOrReplaceTempView("polygontable")
+
+   //import Polygon from shapefile
+   val shlocation = "/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/Kazan"
+   var polshpRDD = new SpatialRDD[Geometry]
+   polshpRDD.rawSpatialRDD = ShapefileReader.readToGeometryRDD(sparkSession.sparkContext, shlocation)
+    polshpRDD.rawSpatialRDD.saveAsTextFile("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/shape")
+    //polshpRDD.CRSTransform("epsg:3857", "epsg:4326")
+    //polshpRDD.CRSTransform("epsg:3857", "epsg:4326")
+    polshpRDD.analyze()
+
+    polshpRDD.saveAsGeoJSON("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/joinscv")
 
 
-   polygonID.createOrReplaceTempView("polygontable")
+
+//    create poygon from scv K
+val polygonKDF = sparkSession.read.format("csv")
+  .option("header", "true")
+  .option("delimiter", ",")
+  .option("nullValue", "")
+  .option("treatEmptyValuesAsNulls", "true")
+  .load("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/Kazan.csv")
+    polygonKDF.createOrReplaceTempView("polygontable1")
+    val polygonK= sparkSession.sql("select ST_Point(cast(X as Decimal(24,20)), cast(Y as Decimal(24,20)) ) from polygontable1")
+    //create PolygonRDD
+    val polygonKRDD = new SpatialRDD[Geometry]
+    polygonKRDD.rawSpatialRDD = Adapter.toRdd(polygonK)
+    polygonKRDD.analyze()
+
     //create PolygonDF
     val polygonDF= sparkSession.sql("select ST_PolygonFromEnvelope(cast(minX as Decimal(24,20)), cast(minY as Decimal(24,20)), cast(maxX as Decimal(24,20)), cast(maxY as Decimal(24,20)),cast(ID as String) ) from polygontable")
     //create PolygonRDD
@@ -114,6 +149,8 @@ object GS1 {
     // SPartitioning of PointRDD and PolygonRDD
     pointRDD.spatialPartitioning(GridType.EQUALGRID)
     polygonRDD.spatialPartitioning(pointRDD.getPartitioner)
+    polshpRDD.spatialPartitioning(pointRDD.getPartitioner)
+    polygonKRDD.spatialPartitioning(pointRDD.getPartitioner)
 
     //val rddWithOtherAttributes = objectRDD.rawSpatialRDD.rdd.map[String](f=>f.getUserData.asInstanceOf[String])
 
@@ -126,6 +163,15 @@ object GS1 {
     joinResultDf.coalesce(1).write.csv("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/joinresult")
     joinResultDf.schema
     joinResultDf.printSchema()
+
+   val joinwithsh = JoinQuery.SpatialJoinQueryFlat(pointRDD,polshpRDD,false,false)
+//   joinwithsh.coalesce(1).saveAsTextFile("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/joinshape")
+   val joinResultDf1= Adapter.toDf(polygonKRDD,sparkSession)//.schema("polygon", "point","id","addresstext","createddatetime")
+   //joinResultDf1.coalesce(1).write.csv("/Users/svetlana.matveeva/Documents/MasterThesis/Dataset/joinscv")
+   joinResultDf1.schema
+   joinResultDf1.printSchema()
+
+
 
 //
 //    // Arima model

@@ -7,10 +7,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/loader/DataLoader$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/loader/DataLoader$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/GeoSpark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/grint/masterthesis/testscala210/main/TestScala$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="GS1.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="107" column="204" selection-start-line="107" selection-start-column="204" selection-end-line="107" selection-end-column="204" />
+            <state relative-caret-position="-319">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#51#91#0" expanded="true" />
               </folding>
@@ -52,8 +49,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="750">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -61,8 +58,8 @@
       <file leaf-file-name="DataLoader.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+            <state relative-caret-position="207">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
                 <element signature="e#52#85#0" expanded="true" />
               </folding>
@@ -73,8 +70,8 @@
       <file leaf-file-name="TestScala.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="583">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
                 <element signature="e#50#90#0" expanded="true" />
               </folding>
@@ -85,8 +82,8 @@
       <file leaf-file-name="GeoSpark.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+            <state relative-caret-position="258">
+              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="91" />
               <folding>
                 <element signature="e#50#66#0" expanded="true" />
               </folding>
@@ -106,8 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gridt</find>
-      <find>getmin</find>
       <find>createArcPolygon(</find>
       <find>createPolygon</find>
       <find>createPolygon(</find>
@@ -115,17 +110,29 @@
       <find>erro</find>
       <find>tordd</find>
       <find>geospark</find>
-      <find>err</find>
       <find>grint</find>
       <find>22342</find>
       <find>out(</find>
       <find>forecast</find>
-      <find>exce</find>
       <find>coefficients:</find>
       <find>coe</find>
-      <find>exc</find>
       <find>spatialpart</find>
       <find>error</find>
+      <find>date</find>
+      <find>err</find>
+      <find>area</find>
+      <find>ex</find>
+      <find>polygontable</find>
+      <find>shapefile</find>
+      <find>exce</find>
+      <find>here</find>
+      <find>shap</find>
+      <find>shape</find>
+      <find>exc</find>
+      <find>joinshape</find>
+      <find>polshp</find>
+      <find>group by</find>
+      <find>GeoSparkSQLRegistrator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,9 +145,9 @@
         <option value="$USER_HOME$/Documents/MasterThesis/test2.csv" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/Documents/MasterThesis/Dataset/test22.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" />
         <option value="$PROJECT_DIR$/src/test/test.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala" />
       </list>
@@ -162,10 +169,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="685" />
-    <option name="y" value="47" />
-    <option name="width" value="755" />
-    <option name="height" value="789" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,8 +178,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,70 +193,10 @@
               <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testscala210" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testscala210" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testscala210" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestScala210" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestScala210" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,7 +312,18 @@
       <option name="presentableId" value="Default" />
       <updated>1527583293358</updated>
       <workItem from="1527583297860" duration="161938000" />
-      <workItem from="1530301530894" duration="4683000" />
+      <workItem from="1530301530894" duration="10739000" />
+      <workItem from="1530775585841" duration="16695000" />
+      <workItem from="1531487720800" duration="1231000" />
+      <workItem from="1532455114556" duration="1031000" />
+      <workItem from="1532808086085" duration="1898000" />
+      <workItem from="1532811596356" duration="1758000" />
+      <workItem from="1533384039850" duration="20000" />
+      <workItem from="1533668871796" duration="1455000" />
+      <workItem from="1533672475507" duration="1576000" />
+      <workItem from="1533812186404" duration="643000" />
+      <workItem from="1533849423729" duration="1558000" />
+      <workItem from="1534095992980" duration="981000" />
     </task>
     <task id="LOCAL-00001" summary="First version with Scala 2.10 and spark 2.2.0">
       <created>1527884891528</created>
@@ -459,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529767817601</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add geospark object">
+      <created>1530562239296</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530562239296</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166621000" />
+    <option name="totallyTimeSpent" value="201523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -485,12 +449,12 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" sideWeight="0.49925596" weight="0.32886904" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="5" sideWeight="0.6479663" visible="true" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.7939914" weight="0.37939394" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.6479663" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.7939914" visible="true" weight="0.4060606" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49570817" weight="0.23030303" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.23891273" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.32403433" />
       <window_info anchor="right" id="Bean Validation" order="5" weight="0.3296131" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="SciView" order="9" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -502,36 +466,36 @@
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.7939914" visible="true" weight="0.37939394" />
+      <window_info anchor="right" id="Palette" order="6" />
       <window_info id="Image Layers" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.7939914" weight="0.4060606" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.24964234" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.24964234" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49570817" weight="0.23030303" />
       <window_info id="Capture Tool" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50429183" side_tool="true" weight="0.27515152" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.4914163" weight="0.3260606" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.24964234" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" sideWeight="0.49925596" weight="0.32886904" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.6479663" weight="0.32969698" />
-      <window_info anchor="right" id="Maven Projects" order="2" weight="0.3296131" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.23891273" />
-      <window_info anchor="right" id="SciView" order="0" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3296131" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.3296131" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.32403433" />
+      <window_info anchor="right" id="SciView" order="10" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3296131" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.3296131" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39880952" />
-      <window_info anchor="right" id="Bean Validation" order="6" weight="0.3296131" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,32 +549,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="825">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
-            <element signature="e#51#91#0" expanded="true" />
+            <element signature="e#50#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="7" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+        <state relative-caret-position="825">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-          <folding>
-            <element signature="e#52#85#0" expanded="true" />
+            <element signature="e#50#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -714,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark/1.1.3/geospark-1.1.3-sources.jar!/org/datasyslab/geospark/spatialOperator/JoinQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="285" column="7" selection-start-line="285" selection-start-column="7" selection-end-line="285" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark/1.1.3/geospark-1.1.3.jar!/com/vividsolutions/jts/geom/Point.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -792,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.2/1.1.3/geospark-sql_2.2-1.1.3.jar!/org/datasyslab/geosparksql/utils/Adapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.2/1.1.3/geospark-sql_2.2-1.1.3.jar!/org/apache/spark/sql/geosparksql/expressions/ST_PolygonFromEnvelope.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -830,16 +770,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output.csv/part-00000-82274806-dfbf-410b-bd2f-e4a4e2be84ae-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-          <folding>
-            <element signature="e#52#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scalanlp/breeze_2.11/0.12/breeze_2.11-0.12.jar!/breeze/linalg/operators/DenseVectorOps.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -865,16 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
           <caret line="112" column="7" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -885,10 +805,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.2/postgresql-42.2.2.jar!/org/postgresql/core/v3/QueryExecutorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="1801" selection-start-line="1801" selection-end-line="1801" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.2/1.1.3/geospark-sql_2.2-1.1.3.jar!/org/datasyslab/geosparksql/utils/Adapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.jar!/org/apache/spark/rdd/NewHadoopRDD.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark-sql_2.2/1.1.3/geospark-sql_2.2-1.1.3-sources.jar!/org/datasyslab/geosparksql/utils/Adapter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark/1.1.3/geospark-1.1.3-sources.jar!/org/datasyslab/geospark/spatialRDD/SpatialRDD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="171" column="63" selection-start-line="171" selection-start-column="63" selection-end-line="171" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datasyslab/geospark/1.1.3/geospark-1.1.3-sources.jar!/org/datasyslab/geospark/spatialOperator/JoinQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/loader/DataLoader.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="e#52#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/TestScala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="e#50#90#0" expanded="true" />
           </folding>
@@ -897,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GeoSpark.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+        <state relative-caret-position="258">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="91" />
           <folding>
             <element signature="e#50#66#0" expanded="true" />
           </folding>
@@ -907,8 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/grint/masterthesis/testscala210/main/GS1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="107" column="204" selection-start-line="107" selection-start-column="204" selection-end-line="107" selection-end-column="204" />
+        <state relative-caret-position="-319">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#51#91#0" expanded="true" />
           </folding>
